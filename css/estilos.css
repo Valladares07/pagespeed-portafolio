@@ -1,0 +1,468 @@
+/* GENERALES */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24;
+    margin-bottom: 35px;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    line-height: 40px !important;
+    text-align: center;
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    z-index: 4;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    flex: 100%;
+}
+
+/* CABECERA */
+
+.header {
+    background-color: #1b2127;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+    .logo {
+        align-self: center;
+    } 
+
+    .menu {
+        height: inherit;
+    }
+    .menu ol {
+        display: flex;
+        height: inherit;
+    }
+    .menu ol li {
+        height: inherit;
+    }
+    .menu ol li a {
+        display: flex;
+        align-items: center;
+        height: inherit;
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+
+/* SECCION PRINCIPAL */
+
+.principal {
+    height: 300px;
+    background-color: #1b2727;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    h1 {
+        font-size: 40px;
+        line-height: 1.5;
+        letter-spacing: -0.2px;
+        color: white;
+        margin: 0;
+        margin-right: 20px;
+        flex-shrink: 0;
+    }
+
+    h1 strong {
+        color: #026fff;
+    }
+
+    .imagen-hero {
+        object-fit: cover;
+    }
+
+/* SECCION PORTAFOLIO */
+
+.portafolio {
+    background: #fafafa;
+    padding: 20px;
+}
+
+    .proyecto {
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        padding: 20px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between
+    }
+    .proyecto strong {
+        font-family: 'Fjalla One', sans-serif;
+    }
+
+        .proyecto-detalles {
+            width: 50%;
+        }
+
+            .proyecto-titulo {
+                font-size: 30px;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .proyecto-curso, .proyecto-fecha, .proyecto-url {
+                margin: 10px 0;
+            }
+
+            .proyecto-descripcion {
+                font-size: 20px;
+            }
+
+        .proyecto-imagen {
+            width: 50%;
+        }
+
+/* Eventos */
+
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.eventos-titulo {
+    padding-left: 6px;
+}
+
+    .evento {
+        background-color: #f4fbff;
+        margin: 1%;
+        width: 48%;
+        flex-shrink: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .evento-imagen img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .evento-imagen video {
+            width: 100%;
+            height: auto;
+        }
+
+        .evento-video {
+            width: 100%;
+            height: 0;
+            padding-top: 56.25%;
+            position: relative;
+        }
+        
+        .evento-video iframe {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .evento-detalle {
+            z-index: 1;
+            margin: 20px 40px;
+            margin-top: -40px;
+            background-color: white;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+        }
+
+            .evento-descripcion {
+                text-align: left;
+            }
+
+            .evento-url {
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 5px 20px;
+                text-decoration: none;
+                color: #056fff
+            }
+
+/* Seccion de Contacto */
+
+.contacto {
+    background-color:  #056fff;
+    color: white;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+    .formulario-correo h3 {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .formulario-correo input {
+        border-color: gray;
+        border-style: solid;
+        border-radius: 5px;
+        padding: 10px 20px 10px 25px;
+        background-image: url('../imagenes/envelope.svg');
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5px;
+    }
+
+    .formulario-correo button {
+        display: block;
+        margin-top: 10px;
+        background: transparent;
+        color: white;
+        padding: 10px 0;
+        border-radius: 5px;
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .social {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 50px;
+        color: white;
+    }
+
+/* Pie de Pagina */
+
+.footer {
+    background-color: #1b2127;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align:  middle;
+}
+
+.footer a {
+    color: white;
+}
+
+/* MEDIA QUERIES (DESKTOP FIRST) CON BREAKPOINTS DE MEDIDAS ESTANDAR */
+
+@media screen and (max-width: 1023px) {
+    .container {
+        padding: 0 1em;
+    }
+    
+    .principal {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 1.5em;
+    }
+
+    .portafolio {
+        padding: 0;
+    }
+
+        h1 {
+            font-size: 2em;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .imagen-hero {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    
+        .proyecto-imagen {
+            width: auto;
+            text-align: center;
+        }
+        .proyecto-imagen img {
+            max-width: 100%;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    .burger-button {
+        display: block;
+    }
+    
+    .header {
+        display: block;
+        height: auto;
+    }
+
+        .logo {
+            text-align: center;
+        }
+    
+        .menu {
+            position: fixed;
+            background: rgba(5, 111, 255, 0.9);
+            z-index: 3;
+            top: 0;
+            left: -100%;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu.is-active {
+            left: 0;
+        }
+        .menu ol {
+            display: block;
+        }
+        .menu ol li{
+            height: 50px;
+        }
+        .menu ol li a {
+            justify-content: center;                
+            font-size: 2em;
+            text-decoration: underline;
+            margin-bottom: 0.5em;
+        }
+
+    .proyecto {
+        display: block;
+    }
+
+        .proyecto-detalles {
+            width: auto;
+            font-size: 16px;
+        }
+
+            .proyecto-titulo {
+                font-size: 1.5em;
+                margin-bottom: 0.3em;
+            }
+
+            .proyecto-curso, .proyecto-fecha, .proyecto-url {
+                font-size: 1em;
+                margin: 0.3em 0;
+            }
+            .proyecto-curso {
+                font-size: 0.7em;
+            }
+
+            .proyecto-descripcion {
+                font-size: 1em;
+            }
+
+    .evento {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .principal h1 {
+        font-size: 1.5em;
+    }
+
+        .proyecto-detalles {
+            width: auto;
+            font-size: 14px;
+        }
+
+        .evento-detalle {
+            margin: -2em .5em .5em .5em;
+            padding: 1em;
+        }
+
+    .contacto {
+        height: auto;
+        padding: 1em 0;
+        text-align: center;
+        display: block;
+    }
+
+        .formulario-correo h3 {
+            margin-top: 0;
+        }
+
+        .formulario-correo button {
+            margin: 1em auto;
+        }
+
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+        /* Soluciona el problema de los margenes en los parrafos */
+    }
+
+    .social {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .principal h1 {
+        font-size: 1.2em;
+    }
+
+    .principal {
+        padding: 2em 1em;
+    }  
+}
